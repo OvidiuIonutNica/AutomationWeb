@@ -20,4 +20,22 @@ public class Tests extends BaseTest {
                 .openFirstOffer()
                 .checkIfOfferIsFor(NUMBER_OF_GUESTS);
     }
+
+    @Test(description = "Verify that the results and details page match the extra filters")
+    public void verifyResultsAndDetailsPageMatchExtraFilters() {
+        homeScreen
+                .insertDestination(DESTINATION_ROME_ITALY)
+                .setCheckIn()
+                .setCheckOut()
+                .setGuests()
+                .clickSearchBtn();
+        destinationScreen
+                .checkIfFilterIsApplied()
+                .openFilter()
+                .setFiveBedrooms()
+                .showMoreFacilities()
+                .chosePoolFacilities()
+                .applyAdvancedFilters();
+
+    }
 }

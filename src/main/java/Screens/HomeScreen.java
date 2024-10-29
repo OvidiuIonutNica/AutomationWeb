@@ -77,25 +77,20 @@ public class HomeScreen {
 
     public HomeScreen setGuests() {
         ExtentHelper.logInfoEvent("Move to Add Guests");
-        Actions actions = new Actions(driver);
-        actions.sendKeys(Keys.TAB).perform();
+        pressKey(Keys.TAB, 1);
         WaitUtils.waitFor(ofSeconds(1));
-        actions.sendKeys(Keys.TAB).perform();
-        actions.sendKeys(Keys.ENTER).perform();
+        pressKey(Keys.TAB, 1);
+        pressKey(Keys.ENTER, 1);
 
         ExtentHelper.logInfoEvent("Set Guests");
         ExtentHelper.logInfoEvent("Set two adults");
-        actions.sendKeys(Keys.TAB).perform();
-        WaitUtils.waitFor(ofMillis(200));
-        actions.sendKeys(Keys.ENTER).perform();
-        WaitUtils.waitFor(ofMillis(200));
-        actions.sendKeys(Keys.ENTER).perform();
+        pressKey(Keys.TAB, 1);
+        pressKey(Keys.ENTER, 1);
+        pressKey(Keys.ENTER, 1);
 
         ExtentHelper.logInfoEvent("Set one children");
-        WaitUtils.waitFor(ofMillis(200));
-        actions.sendKeys(Keys.TAB).perform();
-        WaitUtils.waitFor(ofMillis(200));
-        actions.sendKeys(Keys.ENTER).perform();
+        pressKey(Keys.TAB, 1);
+        pressKey(Keys.ENTER, 1);
         return this;
     }
 }

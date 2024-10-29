@@ -1,17 +1,17 @@
 package util;
 
 import lombok.extern.slf4j.Slf4j;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.ArrayList;
 
+import static java.time.Duration.ofMillis;
 import static java.time.Duration.ofSeconds;
+import static util.WaitUtils.waitFor;
 
 @Slf4j
 public class ActionsUtils {
@@ -74,6 +74,14 @@ public class ActionsUtils {
         } catch (Exception e) {
             log.warn("Element located using locator: {}", by);
             return false;
+        }
+    }
+
+    public static void pressKey(Keys key, int numberOfTimes) {
+        Actions actions = new Actions(driver);
+        for (int i = 0; i < numberOfTimes; i++) {
+            waitFor(ofMillis(500));
+            actions.sendKeys(key).perform();
         }
     }
 }

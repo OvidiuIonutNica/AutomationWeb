@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4288e7aa-43d2-400f-b11c-503d5c904fa9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseExtentClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/reporting/PrintDetailsInReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Screens/DestinationScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Screens/DestinationScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Screens/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Screens/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ActionsUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ActionsUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,20 +55,7 @@
       <recent name="util" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Tests.verifyResultsMatchSearchCriteria">
-    <configuration name="AirbnbTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="base.AirbnbTest" />
-      <module name="AutomationWebProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="base.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Tests.verifyResultsAndDetailsPageMatchExtraFilters">
     <configuration name="AirbnbTest.testOpenPage2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationWebProject" />
       <extension name="coverage">
@@ -110,6 +97,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests.verifyResultsAndDetailsPageMatchExtraFilters" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationWebProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="verifyResultsAndDetailsPageMatchExtraFilters" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tests.verifyResultsMatchSearchCriteria" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationWebProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -124,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Tests.verifyResultsAndDetailsPageMatchExtraFilters" />
         <item itemvalue="TestNG.Tests.verifyResultsMatchSearchCriteria" />
         <item itemvalue="TestNG.Tests" />
         <item itemvalue="TestNG.Tests.testOpenPage2" />
         <item itemvalue="TestNG.AirbnbTest.testOpenPage2" />
-        <item itemvalue="Application.AirbnbTest" />
       </list>
     </recent_temporary>
   </component>
@@ -142,6 +141,22 @@
       <updated>1730201885105</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Screens/DestinationScreen.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AutomationWebProject$Tests.ic" NAME="Tests Coverage Results" MODIFIED="1730228915293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
