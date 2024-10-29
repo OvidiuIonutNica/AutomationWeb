@@ -8,6 +8,9 @@
     <properties>
         <SeleniumJava.version>4.25.0</SeleniumJava.version>
         <TestNG.version>7.10.2</TestNG.version>
+        <slf4j-api-version>1.7.5</slf4j-api-version>
+        <extentreports-version>5.0.9</extentreports-version>
+
         <BT_web-automation-framework.version>1.3.11</BT_web-automation-framework.version>
         <webdriver.chrome.path>${basedir}/resources/chromedriver.exe</webdriver.chrome.path>
     </properties>
@@ -40,6 +43,17 @@
             <version>${TestNG.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extentreports-version}</version>
+        </dependency>
     </dependencies>
 
     <build>

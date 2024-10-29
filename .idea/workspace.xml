@@ -5,18 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4288e7aa-43d2-400f-b11c-503d5c904fa9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Screens/DestinationScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Screens/HomeScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/ActionsUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/ConstantsUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/EnvUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/reporting/CustomLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/reporting/ExtentHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/reporting/ExtentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/reporting/ExtentTestManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/reporting/PrintDetailsInReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/ovidiu.nica/Downloads/AutomationWebProject/src/test",
+    "last_opened_file_path": "C:/Users/ovidiu.nica/Downloads/AutomationWebProject/src/main/java/util",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -52,28 +57,76 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ovidiu.nica\Downloads\AutomationWebProject\src\main\java\util" />
       <recent name="C:\Users\ovidiu.nica\Downloads\AutomationWebProject\src\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ovidiu.nica\Downloads\AutomationWebProject\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="util" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.Test.testOpenPage2">
-    <configuration name="Test.testOpenPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Tests.verifyResultsMatchSearchCriteria">
+    <configuration name="AirbnbTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="base.AirbnbTest" />
       <module name="AutomationWebProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" value="testOpenPage" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test.testOpenPage2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AirbnbTest.testOpenPage2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationWebProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="base" />
+      <option name="MAIN_CLASS_NAME" value="base.AirbnbTest" />
+      <option name="METHOD_NAME" value="testOpenPage2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationWebProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.testOpenPage2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationWebProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
       <option name="METHOD_NAME" value="testOpenPage2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.verifyResultsMatchSearchCriteria" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationWebProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="verifyResultsMatchSearchCriteria" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -83,8 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Test.testOpenPage2" />
-        <item itemvalue="JUnit.Test.testOpenPage" />
+        <item itemvalue="TestNG.Tests.verifyResultsMatchSearchCriteria" />
+        <item itemvalue="TestNG.Tests" />
+        <item itemvalue="TestNG.Tests.testOpenPage2" />
+        <item itemvalue="TestNG.AirbnbTest.testOpenPage2" />
+        <item itemvalue="Application.AirbnbTest" />
       </list>
     </recent_temporary>
   </component>
@@ -98,5 +154,8 @@
       <updated>1730201885105</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AutomationWebProject$Tests.ic" NAME="Tests Coverage Results" MODIFIED="1730228915293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
