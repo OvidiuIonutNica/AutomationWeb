@@ -9,7 +9,7 @@ import util.ActionsUtils;
 
 import static util.EnvUtils.BASE_URL;
 
-public class BaseTest {
+public class BaseTest extends BaseExtentClass{
 
     public WebDriver driver;
 

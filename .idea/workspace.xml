@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4288e7aa-43d2-400f-b11c-503d5c904fa9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Screens/DestinationScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Screens/HomeScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/ActionsUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/ConstantsUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/EnvUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/reporting/CustomLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/reporting/ExtentHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/reporting/ExtentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/reporting/ExtentTestManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/reporting/PrintDetailsInReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseExtentClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/reporting/PrintDetailsInReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

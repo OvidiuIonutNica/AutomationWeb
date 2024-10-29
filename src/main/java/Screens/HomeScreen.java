@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import util.WaitUtils;
+import util.reporting.ExtentHelper;
 
 import java.util.List;
 
@@ -31,19 +32,19 @@ public class HomeScreen {
     }
 
     public HomeScreen insertDestination(String destination) {
-        log.info("Insert destination: " + destination);
+        ExtentHelper.logInfoEvent("Insert destination: " + destination);
         sendTextToElement(searchDestinationField, destination);
         return this;
     }
 
     public HomeScreen clickSearchBtn() {
-        log.info("Click on Search button");
+        ExtentHelper.logInfoEvent("Click on Search button");
         clickButtonByText("Search");
         return this;
     }
 
     public HomeScreen setCheckIn() {
-        log.info("Set Check In - current date");
+        ExtentHelper.logInfoEvent("Set Check In - current date");
         openDatePicker(0);
         String getCurrentDate = getCurrentDate();
         selectDate(getCurrentDate);
@@ -51,7 +52,7 @@ public class HomeScreen {
     }
 
     public HomeScreen setCheckOut() {
-        log.info("Set Check Out - after three days");
+        ExtentHelper.logInfoEvent("Set Check Out - after three days");
         String getThreeDaysAfterCurrentDate = getLocalTimePlusDaysShortFormat(3);
         selectDate(getThreeDaysAfterCurrentDate);
         return this;
@@ -68,29 +69,29 @@ public class HomeScreen {
     }
 
     public void selectDate(String date) {
-        log.info("Select Date: " + date);
+        ExtentHelper.logInfoEvent("Select Date: " + date);
         By dateElement = By.xpath("//div[@data-testid='" + date + "']");
         new WebDriverWait(driver, ofSeconds(30)).until(ExpectedConditions.elementToBeClickable(dateElement));
         driver.findElement(dateElement).click();
     }
 
     public HomeScreen setGuests() {
-        log.info("Move to Add Guests");
+        ExtentHelper.logInfoEvent("Move to Add Guests");
         Actions actions = new Actions(driver);
         actions.sendKeys(Keys.TAB).perform();
         WaitUtils.waitFor(ofSeconds(1));
         actions.sendKeys(Keys.TAB).perform();
         actions.sendKeys(Keys.ENTER).perform();
 
-        log.info("set Guests");
-        log.info("set two adults");
+        ExtentHelper.logInfoEvent("Set Guests");
+        ExtentHelper.logInfoEvent("Set two adults");
         actions.sendKeys(Keys.TAB).perform();
         WaitUtils.waitFor(ofMillis(200));
         actions.sendKeys(Keys.ENTER).perform();
         WaitUtils.waitFor(ofMillis(200));
         actions.sendKeys(Keys.ENTER).perform();
 
-        log.info("set one children");
+        ExtentHelper.logInfoEvent("Set one children");
         WaitUtils.waitFor(ofMillis(200));
         actions.sendKeys(Keys.TAB).perform();
         WaitUtils.waitFor(ofMillis(200));

@@ -1,3 +1,4 @@
+import base.BaseExtentClass;
 import base.BaseTest;
 import org.testng.annotations.Test;
 

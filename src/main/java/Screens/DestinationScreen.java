@@ -7,6 +7,7 @@ import org.testng.Assert;
 import util.ActionsUtils;
 import util.DateUtils;
 import util.WaitUtils;
+import util.reporting.ExtentHelper;
 
 import java.util.List;
 
@@ -23,7 +24,7 @@ public class DestinationScreen {
     private final By guestsField = By.xpath("//div[@id='GuestPicker-book_it-trigger']");
 
     public DestinationScreen checkIfFilterIsApplied() {
-        log.info("Check if Filter is Applied");
+        ExtentHelper.logInfoEvent("Check if Filter is Applied");
         WaitUtils.waitForElementToBeVisible(firstOffer);
 
         String city = "Rome";
@@ -44,13 +45,13 @@ public class DestinationScreen {
     }
 
     public DestinationScreen openFirstOffer() {
-        log.info("Open first offer present in page");
+        ExtentHelper.logInfoEvent("Open first offer present in page");
         ActionsUtils.clickOnElementUsingJavaScriptExecutor(firstOffer);
         return this;
     }
 
     public DestinationScreen checkIfOfferIsFor(String numberOfGuests) {
-        log.info("Check if offer is for: " + numberOfGuests);
+        ExtentHelper.logInfoEvent("Check if offer is for: " + numberOfGuests);
         switchToTab(1);
         clickToElement(closeBtnTranslationPopUp);
         scrollToElement(guestsField, ofSeconds(10));
