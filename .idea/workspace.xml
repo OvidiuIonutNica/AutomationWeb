@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4288e7aa-43d2-400f-b11c-503d5c904fa9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Screens/OfferScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Screens/DestinationScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Screens/DestinationScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Screens/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Screens/HomeScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/ActionsUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ActionsUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ConstantsUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ConstantsUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/DateUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,19 +60,11 @@
       <recent name="util" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Tests.verifyResultsAndDetailsPageMatchExtraFilters">
-    <configuration name="AirbnbTest.testOpenPage2" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/ovidiu.nica/Downloads/AutomationWebProject/testng.xml">
+    <configuration name="C:/Users/ovidiu.nica/Downloads/AutomationWebProject/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationWebProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="base.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="base" />
-      <option name="MAIN_CLASS_NAME" value="base.AirbnbTest" />
-      <option name="METHOD_NAME" value="testOpenPage2" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -85,11 +82,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.testOpenPage2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.verifyPropertyIsDisplayedCorrectlyOnMap" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationWebProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Tests" />
-      <option name="METHOD_NAME" value="testOpenPage2" />
+      <option name="METHOD_NAME" value="verifyPropertyIsDisplayedCorrectlyOnMap" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -123,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Tests.verifyResultsAndDetailsPageMatchExtraFilters" />
-        <item itemvalue="TestNG.Tests.verifyResultsMatchSearchCriteria" />
+        <item itemvalue="TestNG.C:/Users/ovidiu.nica/Downloads/AutomationWebProject/testng.xml" />
+        <item itemvalue="TestNG.Tests.verifyPropertyIsDisplayedCorrectlyOnMap" />
         <item itemvalue="TestNG.Tests" />
-        <item itemvalue="TestNG.Tests.testOpenPage2" />
-        <item itemvalue="TestNG.AirbnbTest.testOpenPage2" />
+        <item itemvalue="TestNG.Tests.verifyResultsMatchSearchCriteria" />
+        <item itemvalue="TestNG.Tests.verifyResultsAndDetailsPageMatchExtraFilters" />
       </list>
     </recent_temporary>
   </component>
@@ -145,15 +142,19 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="30" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Screens/OfferScreen.java</url>
+          <line>18</line>
+          <properties class="Screens.OfferScreen" method="checkIfOfferIsFor">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Screens/DestinationScreen.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="33" />
+          <url>file://$PROJECT_DIR$/src/test/java/Tests.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
