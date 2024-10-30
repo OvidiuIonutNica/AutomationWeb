@@ -1,10 +1,8 @@
 package Screens;
 
-import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import util.WaitUtils;
@@ -12,13 +10,11 @@ import util.reporting.ExtentHelper;
 
 import java.util.List;
 
-import static java.time.Duration.ofMillis;
 import static java.time.Duration.ofSeconds;
 import static util.ActionsUtils.*;
 import static util.DateUtils.getCurrentDate;
 import static util.DateUtils.getLocalTimePlusDaysShortFormat;
 
-@Slf4j
 public class HomeScreen {
 
     private final By searchDestinationField = By.cssSelector("#bigsearch-query-location-input");
@@ -26,7 +22,7 @@ public class HomeScreen {
     private final By checkInField = By.xpath("//div[contains(text(), 'Add dates')]");
 
     public HomeScreen navigateToHomeScreen() {
-        log.info("Navigate to home screen");
+        ExtentHelper.logInfoEvent("Navigate to home screen");
         clickToElement(homeBtn);
         return this;
     }

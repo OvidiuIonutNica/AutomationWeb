@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Tests Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/ovidiu.nica/Downloads/AutomationWebProject/src">
-        <classes/>
+<suite name="Tests Suite">
+
+    <test name="Tests">
+        <classes>
+            <class name="Tests"/>
+        </classes>
     </test>
 </suite>
